@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ppctu="http://primefaces.prime.com.tr/ui">
+    <h:head>
+        <title>Enquete.Mobile Web - Home</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <ppctu:panel>
+                <table width="100%">
+                    <tr>
+                        <td width="30%">
+                            <ppctu:panel>
+                                Algum texto.
+                            </ppctu:panel>
+                        </td>
+                        <td></td>
+                        <td width="30%">
+                            <ppctu:panel></ppctu:panel>
+                        </td>
+                    </tr>
+                </table>
+            </ppctu:panel>
+            
+            <ppctu:menubar autoSubmenuDisplay="true">
+                <ppctu:menuitem value="Home" url="faces/Restrict/principal.xhtml"/>
+                <ppctu:submenu label="Pesquisa">
+                    <ppctu:menuitem value="Categorias" url="faces/Restrict/pesquisa_categoria.xhtml"/>
+                    <ppctu:menuitem value="Pesquisas Públicas" url="faces/Restrict/pesquisa_publica.xhtml"/>
+                    <ppctu:menuitem value="Minhas Pesquisas" url="faces/Restrict/pesquisas.xhtml"/>
+                </ppctu:submenu>
+                <ppctu:menuitem value="Contato" url="faces/contato.xhtml"/>
+            </ppctu:menubar>
+	</h:form>
+    </h:body>
+</html>

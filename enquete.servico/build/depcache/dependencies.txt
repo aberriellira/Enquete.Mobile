@@ -1,0 +1,6 @@
+||:enquete.servico.Seguranca
+java.lang.Object
+enquete.servico.Seguranca
+||:enquete.servico.Usuario
+java.lang.Object
+enquete.servico.Usuario

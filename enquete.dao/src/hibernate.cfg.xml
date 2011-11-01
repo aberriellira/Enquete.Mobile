@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/enquete_mobile</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">AB,18-09-10,AA</property>
+    <property name="hibernate.show_sql">true</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.default_schema">enquete_mobile</property>
+    <property name="hibernate.hbm2ddl.auto">create-drop</property>
+    <property name="hibernate.transaction.auto_close_session">true</property>
+    <property name="hibernate.cache.use_query_cache">true</property>
+    <property name="hibernate.jdbc.use_scrollable_resultset">true</property>
+    <property name="hibernate.connection.autocommit">true</property>
+    <mapping class="enquete.modelo.Alternativa"/>
+    <mapping class="enquete.modelo.Autorizacao"/>
+    <mapping class="enquete.modelo.Cidade"/>
+    <mapping class="enquete.modelo.ClassificacaoPesquisa"/>
+    <mapping class="enquete.modelo.Cliente"/>
+    <mapping class="enquete.modelo.Entrevistado"/>
+    <mapping class="enquete.modelo.GrupoUsuario"/>
+    <mapping class="enquete.modelo.Permissao"/>
+    <mapping class="enquete.modelo.PermissaoQuiz"/>
+    <mapping class="enquete.modelo.Pesquisa"/>
+    <mapping class="enquete.modelo.Pessoa"/>
+    <mapping class="enquete.modelo.Questao"/>
+    <mapping class="enquete.modelo.Recurso"/>
+    <mapping class="enquete.modelo.Resposta"/>
+    <mapping class="enquete.modelo.UF"/>
+    <mapping class="enquete.modelo.Usuario"/>
+  </session-factory>
+</hibernate-configuration>

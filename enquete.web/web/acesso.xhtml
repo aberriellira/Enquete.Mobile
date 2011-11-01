@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.prime.com.tr/mobile"
+      xmlns:ppctu="http://primefaces.prime.com.tr/ui">
+    <h:head>
+        <title>Enquete.Mobile Web - Acesso</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <ppctu:panel style="border-color: white;">
+                <table width="100%">
+                    <tr>
+                        <td width="30%">
+                            <ppctu:panel style=" border-color: white " >
+                                <h:outputText value="Enquete.Mobile Web" style="color:red;"/>
+                            </ppctu:panel>
+                        </td>
+                        <td></td>
+                        <td width="30%">
+                            <table width="100%">
+                                <tr>
+                                    <td width="30%" align="center">
+                                        <a href="faces/acesso.xhtml">Entrar |</a>
+                                    </td>
+                                    <td width="34%" align="center">
+                                        <a href="faces/cadastro.xhtml">Cadastro |</a>
+                                    </td>
+                                    <td width="34%" align="center">
+                                        <a href="faces/mensagem.xhtml">Mensagem</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </ppctu:panel>
+            <ppctu:menubar style=" background-color: lightgray;" >
+                <ppctu:menuitem value="Home" url="faces/index.xhtml"/>
+                <ppctu:menuitem value="Acesso" url="faces/acesso.xhtml"/>
+                <ppctu:menuitem value="Contato" url="faces/contato.xhtml"/>
+            </ppctu:menubar>
+            <br />
+            <br />
+            <ppctu:tabView style="width:400px" >
+                <ppctu:tab title="Acesso">
+                    <p>Entre com suas credenciais.</p>
+                    <p>Você pode se cadastrar <a href="faces/cadastro.xhtml">aqui</a>.</p>
+                    <br />
+                    <h:panelGrid columns="2">
+                        <h:outputText id="lblLogin" value="Login:"></h:outputText>
+                        <h:inputText id="txtLogin" value="#{acessoController.login}" ></h:inputText>
+                        <h:outputText id="lblSenha" value="Senha:"></h:outputText>
+                        <h:inputSecret id="txtSenha" value="#{acessoController.senha}"></h:inputSecret>
+                    </h:panelGrid>
+                </ppctu:tab>>
+            </ppctu:tabView>
+	</h:form>
+    </h:body>
+</html>
